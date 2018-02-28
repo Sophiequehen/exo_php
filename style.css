@@ -1,0 +1,86 @@
+*{
+	text-decoration: none;
+	color: black;
+	list-style: none;
+}
+
+body{
+	margin: 20px;
+
+}
+
+h1{
+	text-align: center;
+}
+
+.menu li{
+	margin-bottom: 10px;
+}
+
+.menu a:hover{
+	text-decoration: underline;
+} 
+
+section{
+	display: flex;
+	justify-content: center;
+}
+/*-------------------------blog-----------------------*/
+section #section_blog{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.articles{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+	background: blue;
+	margin-bottom: 20px;
+}
+
+.articles img{
+	width: 100%;
+}
+/*---------------------login et connexion------------------------*/
+section#section_login form, section#section_connexion form{
+	display: flex;
+	flex-direction: column;
+}
+
+section#section_connexion form a{
+	margin-top: 20px;
+}
+
+section#section_login form input, section#section_connexion form input{
+	margin-bottom: 20px;
+}
+/*----------------------contact-------------------------*/
+section #section_contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#formulaire{
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+}
+
+#formulaire input, #formulaire textarea, #formulaire select{
+	margin-bottom: 30px;
+}
+
+#buttons{
+	display: flex;
+	justify-content: center;
+}
+
+#message_soumis{
+	margin-bottom: 30px;
+}
+
