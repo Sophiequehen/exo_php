@@ -1,28 +1,19 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>LOGIN</title>
-</head>
+<?php 
+session_start();
+$page = 'connexion_inscription';
+include "config.php";
+include "head.php";
+?>
+
 <body>
 	<h1>INSCRIPTION</h1>
 
-	<?php include "menu.php"; ?>
+	<div class="menu">
+	<?php include "menu.php" ?>
+	</div>
 
-	<section id="section_login">
+	<section id="section_inscription">
 		<?php 
-			//variables pour la connection à la base de données
-		$servername = "localhost";
-		$username = "root";
-		$password = "simplon";
-		$dbname = "exo_php";
-
- 		// Créer la connection
-		$connection = new mysqli($servername, $username, $password, $dbname);
-
-
 
 		if($_POST){//pour éviter d'envoyer un formulaire dès qu'on arrive sur la page
 
@@ -60,6 +51,8 @@
 	</form>
 
 </section>
-
+<?php
+include "foot.php";
+?>
 </body>
 </html>

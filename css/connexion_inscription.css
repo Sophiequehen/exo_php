@@ -1,0 +1,28 @@
+section#section_connexion, section#section_inscription{
+	margin-top: 100px;
+	padding-left: 150px;
+}
+
+section#section_connexion a{
+	color: black;
+	text-align: center;
+}
+
+section#section_connexion a:hover{
+	text-decoration: none;
+	color: #778899;
+	transition-duration:0.5s; 
+}
+
+section#section_inscription form, section#section_connexion form{
+	display: flex;
+	flex-direction: column;
+}
+
+section#section_connexion form a{
+	margin-top: 20px;
+}
+
+section#section_inscription form input, section#section_connexion form input{
+	margin-bottom: 20px;
+}

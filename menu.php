@@ -1,4 +1,4 @@
-<ul class="menu">
+<ul class="nav flex-column menu">
 	<li>
 		<?php 
 		if(!empty($_SESSION['user'])){
@@ -6,7 +6,7 @@
 		}
 		?>			
 	</li>
-	<li><a href="home.php">HOME</a></li>
+	<li><a href="index.php">HOME</a></li>
 	<li><a href="apropos.php">À PROPOS</a></li>
 	<li><a href="contact.php">CONTACT</a></li>
 	<li>
@@ -19,7 +19,7 @@
 		?>	
 	</li>
 	<li><a href="blog.php">BLOG</a></li>
-	<li><a href="inscription.php">LOGIN</a></li>	
+	<li><a class="a_session" href="connexion.php">CONNEXION</a></li>	
 	<?php
 	if(!empty($_SESSION['user'])){
 		echo '<li><a href="deconnexion.php">Déconnexion</a></li>';

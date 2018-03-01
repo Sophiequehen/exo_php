@@ -1,41 +1,30 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>CONTACT</title>
-</head>
+<?php 
+session_start();
+$page = 'contact';
+include "config.php";
+include "head.php";
+?>
+
 <body>
 	<h1>CONTACT</h1>
 
-	<?php include "menu.php" ?>
+	<div class="menu">
+		<?php include "menu.php" ?>
+	</div>
 
 	<section id="section_contact">
 		<div id="message_soumis">
 			<?php 
-			//variables pour la connection à la base de données
-			$servername = "localhost";
-			$username = "root";
-			$password = "simplon";
-			$dbname = "exo_php";
-
-
-  			// Créer la connection
-			$connection = new mysqli($servername, $username, $password, $dbname);
-  			// Checker la connection
-			if ($connection->connect_error) 
-				{ die("Connection failed: " . $connection->connect_error); }
 			
 			if($_POST){//éviter les erreurs parce que les champs sont vides
 
 			//variables pour récupérer les données
-			$objet = $_POST['objet'];
-			$message = $_POST['message'];
-			$thematique = $_POST['thematique'];
-			$compte = $_POST['compte'];
-			$age = $_POST['age'];
-			
+				$objet = $_POST['objet'];
+				$message = $_POST['message'];
+				$thematique = $_POST['thematique'];
+				$compte = $_POST['compte'];
+				$age = $_POST['age'];
+				
 			//on fait notre requète
 				$requete = "INSERT INTO contact VALUES(NULL, '$objet', '$message', '$thematique', '$compte', '$age')";
 				$resultat = mysqli_query($connection, $requete) or die('ERREUR SQL : '. $requete . mysqli_error($connection));
@@ -80,5 +69,9 @@
 
 			</form>
 		</section>
+
+		<?php
+		include "foot.php";
+		?>
 	</body>
 	</html>

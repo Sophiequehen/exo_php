@@ -1,0 +1,58 @@
+*{
+	text-decoration: none;
+	color: black;
+	list-style: none;
+}
+
+body{
+	margin: 20px;
+}
+
+h1{
+	text-align: center;
+	margin: 50px 0;
+	padding-left: 150px;
+}
+
+img{
+	width: 100%;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #778899;
+	transition-duration:0.5s; 
+}
+
+p.texte{
+	width: 80%;
+	text-align: center;
+}
+
+p.intro{
+	width: 80%;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.menu{
+	position: fixed;
+}
+
+.menu li{
+	margin-bottom: 20px;
+}
+
+section{
+	display: flex;
+	justify-content: center;
+}
+
+.container-fluid{
+	padding-left: 150px;
+}
+

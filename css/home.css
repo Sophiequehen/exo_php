@@ -1,0 +1,8 @@
+section#section_home{
+	padding-bottom: 80px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid black;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}

@@ -1,32 +1,24 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>BLOG</title>
-</head>
+<?php 
+session_start();
+$page = 'blog';
+include "config.php";
+include "head.php";
+ ?>
+
 <body>
 	<h1>BLOG</h1>
 
+	<div class="menu">
 	<?php include "menu.php" ?>
+	</div>
 
 <section id="section_blog">
 	<?php 
-			//variables pour la connection à la base de données
-	$servername = "localhost";
-	$username = "root";
-	$password = "simplon";
-	$dbname = "exo_php";
-
- 			// Créer la connection
-	$connection = new mysqli($servername, $username, $password, $dbname);
   			
-	$request = $connection->query("SELECT * FROM blog");
+	$request = $connection->query("SELECT * FROM blog ORDER BY date DESC");//décroissant
 
 		while ($row = $request->fetch_assoc())//fetch_assoc met les éléments dans un array
-		{	
-			echo '<div class="order"></div>';
+		{
 			echo '<div class="articles">';
 			echo '<h2>'.$row["titre"].'</h2>';//je récupère dans l'array ce qui m'intéresse
 			echo '<img src="'.$row["image"].'">';
@@ -35,7 +27,12 @@
 			echo '<p>'.$row["date"].'</p>';
 			echo '</div>';
 		}
+
+		
 		?>
 </section>
+<?php
+include "foot.php";
+?>
 	</body>
 	</html>

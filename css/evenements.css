@@ -1,0 +1,29 @@
+section#section_evenements{
+	padding-left: 150px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#section_evenements .articles{
+	padding: 20px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#section_evenements #image{
+	height: 350px;
+	width: 800px;
+}
+
+#section_evenements #image img{
+	height: 100%;
+	width: 100%;
+	margin-right: 50px;
+	object-fit: cover;
+}
+
+#section_evenements #legende{
+	margin-left: 50px;
+	width: 60%;
+}
