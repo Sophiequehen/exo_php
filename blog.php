@@ -18,17 +18,16 @@ include "head.php";
 	$request = $connection->query("SELECT * FROM blog ORDER BY date DESC");//décroissant
 
 		while ($row = $request->fetch_assoc())//fetch_assoc met les éléments dans un array
-		{
-			echo '<div class="articles">';
+		{	
+			echo '<div class="articles"><a href="article_blog.php?id='.$row["id"].'">';
 			echo '<h2>'.$row["titre"].'</h2>';//je récupère dans l'array ce qui m'intéresse
 			echo '<img src="'.$row["image"].'">';
 			echo '<p>'.$row["intro"].'</p>';
-			echo '<p>'.$row["texte"].'</p>';
 			echo '<p>'.$row["date"].'</p>';
-			echo '</div>';
+			echo '</a></div>';
 		}
 
-		
+
 		?>
 </section>
 <?php

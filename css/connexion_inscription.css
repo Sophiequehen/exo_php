@@ -26,3 +26,7 @@ section#section_connexion form a{
 section#section_inscription form input, section#section_connexion form input{
 	margin-bottom: 20px;
 }
+
+section#section_already {
+	padding-left: 150px;
+}

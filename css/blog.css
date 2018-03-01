@@ -5,7 +5,12 @@ section#section_blog{
 	flex-wrap: wrap;
 }
 
+section#section_blog a:hover{
+	color: black;
+}
+
 #section_blog .articles{
+	text-align: center;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
