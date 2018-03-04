@@ -5,11 +5,11 @@ section#section_blog{
 	flex-wrap: wrap;
 }
 
-section#section_blog a:hover{
+section#section_blog .articles a:hover:not(.modif){
 	color: black;
 }
 
-#section_blog .articles{
+#section_blog .articles, #section_blog .ajouter_article{
 	text-align: center;
 	padding: 20px;
 	display: flex;
@@ -19,8 +19,41 @@ section#section_blog a:hover{
 	margin-bottom: 20px;
 }
 
+#section_blog .ajouter_article{
+	padding: 250px 0;
+}
+
 #section_blog .articles img{
 	width: 460px;
 	height: 340px;
 	object-fit: cover;
+}
+
+img.deco{
+	margin-top: 10px;
+}
+
+#section_blog h2.ajout{
+	font-size: 32px;
+}
+
+#section_blog p, #section_blog h2{
+	margin-bottom: 0;
+}
+
+#section_blog h2{
+	font-size: 20px;
+}
+
+.publication{
+	color: #778899;
+	font-size: 14px;
+}
+
+.auteur{
+	font-size: 14px;
+}
+
+.modif{
+	margin-bottom: 5px;
 }

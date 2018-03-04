@@ -10,8 +10,7 @@ include "head.php";
 		<?php include "menu.php" ?>
 	</div>
 
-	<div class="container-fluid home">
-		<section id="section_home">
+		<section class="section_home">
 			<p class="intro">BIENVENUE SUR CET EXERCICE DE PHP !</p>
 			<img src="img/home.jpg">
 			<p class="intro">BIENVENUE SUR CET EXERCICE DE PHP !</p>
@@ -27,7 +26,7 @@ include "head.php";
 
 			<p class="texte">Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.</p>
 		</section>
-		<section id="section_home">
+		<section class="section_home" id="home2">
 			<p class="intro">UN DEUXIÈME ARTICLE POUR VOIR</p>
 			<img src="img/home2.jpg">
 			<p class="intro">UN DEUXIÈME ARTICLE POUR VOIR</p>
@@ -43,7 +42,7 @@ include "head.php";
 
 			<p class="texte">Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.</p>
 		</section>
-	</div>
+
 	<?php
 	include "foot.php";
 	?>

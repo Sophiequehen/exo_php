@@ -9,7 +9,7 @@ include "head.php";
 	<h1>INSCRIPTION</h1>
 
 	<div class="menu">
-	<?php include "menu.php" ?>
+		<?php include "menu.php" ?>
 	</div>
 
 	<section id="section_inscription">
@@ -34,6 +34,8 @@ include "head.php";
 				//ma requète, elle efface la précédente
 				$requete = "INSERT INTO login VALUES(NULL, '$user', '$mdp')";
 				$resultat = mysqli_query($connection, $requete) or die('ERREUR SQL : '. $requete . mysqli_error($connection));
+				header('Location: index.php');
+				$_SESSION['user']= $user;	
 			}else{
 				echo 'Erreur de mot de passe';//si les mdp ne sont pas égaux
 			}

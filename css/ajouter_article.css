@@ -1,0 +1,8 @@
+section#section_ajouter form{
+	display: flex;
+	flex-direction: column;
+}
+
+section#section_ajouter form input, section#section_ajouter form input,  section#section_ajouter form textarea{
+	margin-bottom: 20px;
+}

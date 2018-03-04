@@ -30,7 +30,7 @@ include "head.php";
 		//si il existe dans la base de données 
 		if($resultat->num_rows === 1){
 			if (password_verify($mdp, $row['mdp'])) {
-			header('Location: evenements.php');
+			header('Location: index.php');
 			$_SESSION['user']= $user;	
 				
 			}else{

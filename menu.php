@@ -2,7 +2,7 @@
 	<li>
 		<?php 
 		if(!empty($_SESSION['user'])){
-			echo "Bonjour"." ".$_SESSION['user']." "."!";
+			echo "<p class='menu_light'>Bonjour"." ".$_SESSION['user']." "."!</p>";
 		}
 		?>			
 	</li>
@@ -31,7 +31,7 @@
 	</li>	
 	<?php
 	if(!empty($_SESSION['user'])){
-		echo '<li><a href="deconnexion.php">Déconnexion</a></li>';
+		echo '<li><a class="menu_light" href="deconnexion.php">Déconnexion</a></li>';
 	}
 	?>
 </ul>

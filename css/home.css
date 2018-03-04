@@ -1,8 +1,13 @@
-section#section_home{
-	padding-bottom: 80px;
+section.section_home{
+	padding-bottom: 30px;
 	margin-bottom: 50px;
-	border-bottom: 1px solid black;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+.section_home#home2{
+	padding-left: 0;
+	background: #DCDCDC;
+	margin-left: 150px;
 }
